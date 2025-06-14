@@ -52,17 +52,24 @@ textareael.addEventListener("input",function(){
         h1.innerHTML = sec;
         h2.innerHTML=textareael.value.length
     }
-
     function startStopwatch() {
         if (timer === null) {
             timer = setInterval(watch, 1000);
         }
     }
-
     function stopStopwatch() {
         clearInterval(timer);
         timer = null;
     }
+        textareael.addEventListener("paste",()=>{
+    alert("Text is Pasted So Our Gameis Over ")
+    textareael.setAttribute("disabled","true")
+})  
+
+
+
+
+
 
 
 
